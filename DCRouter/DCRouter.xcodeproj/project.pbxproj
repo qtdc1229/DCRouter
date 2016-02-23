@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B511BDF1C7BF30C006314D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B511BDE1C7BF30C006314D3 /* main.m */; };
+		6B511BE21C7BF30C006314D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B511BE11C7BF30C006314D3 /* AppDelegate.m */; };
+		6B511BE51C7BF30C006314D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B511BE41C7BF30C006314D3 /* ViewController.m */; };
+		6B511BE81C7BF30C006314D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B511BE61C7BF30C006314D3 /* Main.storyboard */; };
+		6B511BEA1C7BF30C006314D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B511BE91C7BF30C006314D3 /* Assets.xcassets */; };
+		6B511BED1C7BF30C006314D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B511BEB1C7BF30C006314D3 /* LaunchScreen.storyboard */; };
+		6B511BF81C7BF30C006314D3 /* DCRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B511BF71C7BF30C006314D3 /* DCRouterTests.m */; };
+		6B511C061C7BF440006314D3 /* DCWebRouteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B511C051C7BF440006314D3 /* DCWebRouteHelper.m */; };
+		6B511C091C7BF50F006314D3 /* DCRouteEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B511C081C7BF50F006314D3 /* DCRouteEngine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B511BF41C7BF30C006314D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B511BD21C7BF30C006314D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B511BD91C7BF30C006314D3;
+			remoteInfo = DCRouter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B511BDA1C7BF30C006314D3 /* DCRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B511BDE1C7BF30C006314D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B511BE01C7BF30C006314D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B511BE11C7BF30C006314D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B511BE31C7BF30C006314D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B511BE41C7BF30C006314D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B511BE71C7BF30C006314D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B511BE91C7BF30C006314D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B511BEC1C7BF30C006314D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B511BEE1C7BF30C006314D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B511BF31C7BF30C006314D3 /* DCRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B511BF71C7BF30C006314D3 /* DCRouterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCRouterTests.m; sourceTree = "<group>"; };
+		6B511BF91C7BF30C006314D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B511C031C7BF3AB006314D3 /* DCRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCRouter.h; path = router/DCRouter.h; sourceTree = "<group>"; };
+		6B511C041C7BF440006314D3 /* DCWebRouteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCWebRouteHelper.h; path = router/DCWebRouteHelper.h; sourceTree = "<group>"; };
+		6B511C051C7BF440006314D3 /* DCWebRouteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCWebRouteHelper.m; path = router/DCWebRouteHelper.m; sourceTree = "<group>"; };
+		6B511C071C7BF50F006314D3 /* DCRouteEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCRouteEngine.h; path = router/DCRouteEngine.h; sourceTree = "<group>"; };
+		6B511C081C7BF50F006314D3 /* DCRouteEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCRouteEngine.m; path = router/DCRouteEngine.m; sourceTree = "<group>"; };
+		6B511C0B1C7BF754006314D3 /* DCRouterConfigration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCRouterConfigration.h; path = router/DCRouterConfigration.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B511BD71C7BF30C006314D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B511BF01C7BF30C006314D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B511BD11C7BF30C006314D3 = {
+			isa = PBXGroup;
+			children = (
+				6B511BDC1C7BF30C006314D3 /* DCRouter */,
+				6B511BF61C7BF30C006314D3 /* DCRouterTests */,
+				6B511BDB1C7BF30C006314D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B511BDB1C7BF30C006314D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B511BDA1C7BF30C006314D3 /* DCRouter.app */,
+				6B511BF31C7BF30C006314D3 /* DCRouterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B511BDC1C7BF30C006314D3 /* DCRouter */ = {
+			isa = PBXGroup;
+			children = (
+				6B511C021C7BF318006314D3 /* router */,
+				6B511BE01C7BF30C006314D3 /* AppDelegate.h */,
+				6B511BE11C7BF30C006314D3 /* AppDelegate.m */,
+				6B511BE31C7BF30C006314D3 /* ViewController.h */,
+				6B511BE41C7BF30C006314D3 /* ViewController.m */,
+				6B511BE61C7BF30C006314D3 /* Main.storyboard */,
+				6B511BE91C7BF30C006314D3 /* Assets.xcassets */,
+				6B511BEB1C7BF30C006314D3 /* LaunchScreen.storyboard */,
+				6B511BEE1C7BF30C006314D3 /* Info.plist */,
+				6B511BDD1C7BF30C006314D3 /* Supporting Files */,
+			);
+			path = DCRouter;
+			sourceTree = "<group>";
+		};
+		6B511BDD1C7BF30C006314D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B511BDE1C7BF30C006314D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B511BF61C7BF30C006314D3 /* DCRouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B511BF71C7BF30C006314D3 /* DCRouterTests.m */,
+				6B511BF91C7BF30C006314D3 /* Info.plist */,
+			);
+			path = DCRouterTests;
+			sourceTree = "<group>";
+		};
+		6B511C021C7BF318006314D3 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				6B511C031C7BF3AB006314D3 /* DCRouter.h */,
+				6B511C0B1C7BF754006314D3 /* DCRouterConfigration.h */,
+				6B511C041C7BF440006314D3 /* DCWebRouteHelper.h */,
+				6B511C051C7BF440006314D3 /* DCWebRouteHelper.m */,
+				6B511C071C7BF50F006314D3 /* DCRouteEngine.h */,
+				6B511C081C7BF50F006314D3 /* DCRouteEngine.m */,
+			);
+			name = router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B511BD91C7BF30C006314D3 /* DCRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B511BFC1C7BF30C006314D3 /* Build configuration list for PBXNativeTarget "DCRouter" */;
+			buildPhases = (
+				6B511BD61C7BF30C006314D3 /* Sources */,
+				6B511BD71C7BF30C006314D3 /* Frameworks */,
+				6B511BD81C7BF30C006314D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCRouter;
+			productName = DCRouter;
+			productReference = 6B511BDA1C7BF30C006314D3 /* DCRouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B511BF21C7BF30C006314D3 /* DCRouterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B511BFF1C7BF30C006314D3 /* Build configuration list for PBXNativeTarget "DCRouterTests" */;
+			buildPhases = (
+				6B511BEF1C7BF30C006314D3 /* Sources */,
+				6B511BF01C7BF30C006314D3 /* Frameworks */,
+				6B511BF11C7BF30C006314D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B511BF51C7BF30C006314D3 /* PBXTargetDependency */,
+			);
+			name = DCRouterTests;
+			productName = DCRouterTests;
+			productReference = 6B511BF31C7BF30C006314D3 /* DCRouterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B511BD21C7BF30C006314D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = dingc;
+				TargetAttributes = {
+					6B511BD91C7BF30C006314D3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					6B511BF21C7BF30C006314D3 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 6B511BD91C7BF30C006314D3;
+					};
+				};
+			};
+			buildConfigurationList = 6B511BD51C7BF30C006314D3 /* Build configuration list for PBXProject "DCRouter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B511BD11C7BF30C006314D3;
+			productRefGroup = 6B511BDB1C7BF30C006314D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B511BD91C7BF30C006314D3 /* DCRouter */,
+				6B511BF21C7BF30C006314D3 /* DCRouterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B511BD81C7BF30C006314D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B511BED1C7BF30C006314D3 /* LaunchScreen.storyboard in Resources */,
+				6B511BEA1C7BF30C006314D3 /* Assets.xcassets in Resources */,
+				6B511BE81C7BF30C006314D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B511BF11C7BF30C006314D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B511BD61C7BF30C006314D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B511C091C7BF50F006314D3 /* DCRouteEngine.m in Sources */,
+				6B511BE51C7BF30C006314D3 /* ViewController.m in Sources */,
+				6B511C061C7BF440006314D3 /* DCWebRouteHelper.m in Sources */,
+				6B511BE21C7BF30C006314D3 /* AppDelegate.m in Sources */,
+				6B511BDF1C7BF30C006314D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B511BEF1C7BF30C006314D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B511BF81C7BF30C006314D3 /* DCRouterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B511BF51C7BF30C006314D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B511BD91C7BF30C006314D3 /* DCRouter */;
+			targetProxy = 6B511BF41C7BF30C006314D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B511BE61C7BF30C006314D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B511BE71C7BF30C006314D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B511BEB1C7BF30C006314D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B511BEC1C7BF30C006314D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B511BFA1C7BF30C006314D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B511BFB1C7BF30C006314D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B511BFD1C7BF30C006314D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DCRouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingc.DCRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B511BFE1C7BF30C006314D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DCRouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingc.DCRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6B511C001C7BF30C006314D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DCRouterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingc.DCRouterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCRouter.app/DCRouter";
+			};
+			name = Debug;
+		};
+		6B511C011C7BF30C006314D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DCRouterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingc.DCRouterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCRouter.app/DCRouter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B511BD51C7BF30C006314D3 /* Build configuration list for PBXProject "DCRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B511BFA1C7BF30C006314D3 /* Debug */,
+				6B511BFB1C7BF30C006314D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B511BFC1C7BF30C006314D3 /* Build configuration list for PBXNativeTarget "DCRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B511BFD1C7BF30C006314D3 /* Debug */,
+				6B511BFE1C7BF30C006314D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6B511BFF1C7BF30C006314D3 /* Build configuration list for PBXNativeTarget "DCRouterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B511C001C7BF30C006314D3 /* Debug */,
+				6B511C011C7BF30C006314D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B511BD21C7BF30C006314D3 /* Project object */;
+}
