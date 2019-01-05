@@ -14,8 +14,10 @@
 		6B511BEA1C7BF30C006314D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B511BE91C7BF30C006314D3 /* Assets.xcassets */; };
 		6B511BED1C7BF30C006314D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B511BEB1C7BF30C006314D3 /* LaunchScreen.storyboard */; };
 		6B511BF81C7BF30C006314D3 /* DCRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B511BF71C7BF30C006314D3 /* DCRouterTests.m */; };
-		6B511C061C7BF440006314D3 /* DCWebRouteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B511C051C7BF440006314D3 /* DCWebRouteHelper.m */; };
+		6B511C061C7BF440006314D3 /* DCRouteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B511C051C7BF440006314D3 /* DCRouteHelper.m */; };
 		6B511C091C7BF50F006314D3 /* DCRouteEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B511C081C7BF50F006314D3 /* DCRouteEngine.m */; };
+		6BC1CFC71CA908ED0007EAA2 /* DCRouterStyleHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1CFC61CA908ED0007EAA2 /* DCRouterStyleHandle.m */; };
+		6BC1CFD11CA9258F0007EAA2 /* DCRouterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1CFD01CA9258F0007EAA2 /* DCRouterModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +45,15 @@
 		6B511BF71C7BF30C006314D3 /* DCRouterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCRouterTests.m; sourceTree = "<group>"; };
 		6B511BF91C7BF30C006314D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B511C031C7BF3AB006314D3 /* DCRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCRouter.h; path = router/DCRouter.h; sourceTree = "<group>"; };
-		6B511C041C7BF440006314D3 /* DCWebRouteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCWebRouteHelper.h; path = router/DCWebRouteHelper.h; sourceTree = "<group>"; };
-		6B511C051C7BF440006314D3 /* DCWebRouteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCWebRouteHelper.m; path = router/DCWebRouteHelper.m; sourceTree = "<group>"; };
+		6B511C041C7BF440006314D3 /* DCRouteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCRouteHelper.h; path = router/DCRouteHelper.h; sourceTree = "<group>"; };
+		6B511C051C7BF440006314D3 /* DCRouteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCRouteHelper.m; path = router/DCRouteHelper.m; sourceTree = "<group>"; };
 		6B511C071C7BF50F006314D3 /* DCRouteEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCRouteEngine.h; path = router/DCRouteEngine.h; sourceTree = "<group>"; };
 		6B511C081C7BF50F006314D3 /* DCRouteEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCRouteEngine.m; path = router/DCRouteEngine.m; sourceTree = "<group>"; };
 		6B511C0B1C7BF754006314D3 /* DCRouterConfigration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCRouterConfigration.h; path = router/DCRouterConfigration.h; sourceTree = "<group>"; };
+		6BC1CFC51CA908ED0007EAA2 /* DCRouterStyleHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCRouterStyleHandle.h; path = router/resolve/DCRouterStyleHandle.h; sourceTree = "<group>"; };
+		6BC1CFC61CA908ED0007EAA2 /* DCRouterStyleHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCRouterStyleHandle.m; path = router/resolve/DCRouterStyleHandle.m; sourceTree = "<group>"; };
+		6BC1CFCF1CA9258F0007EAA2 /* DCRouterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRouterModel.h; sourceTree = "<group>"; };
+		6BC1CFD01CA9258F0007EAA2 /* DCRouterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRouterModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,14 +129,35 @@
 		6B511C021C7BF318006314D3 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				6BC1CFCE1CA9258F0007EAA2 /* model */,
+				6BC1CFC41CA9082C0007EAA2 /* resolve */,
 				6B511C031C7BF3AB006314D3 /* DCRouter.h */,
 				6B511C0B1C7BF754006314D3 /* DCRouterConfigration.h */,
-				6B511C041C7BF440006314D3 /* DCWebRouteHelper.h */,
-				6B511C051C7BF440006314D3 /* DCWebRouteHelper.m */,
+				6B511C041C7BF440006314D3 /* DCRouteHelper.h */,
+				6B511C051C7BF440006314D3 /* DCRouteHelper.m */,
 				6B511C071C7BF50F006314D3 /* DCRouteEngine.h */,
 				6B511C081C7BF50F006314D3 /* DCRouteEngine.m */,
 			);
 			name = router;
+			sourceTree = "<group>";
+		};
+		6BC1CFC41CA9082C0007EAA2 /* resolve */ = {
+			isa = PBXGroup;
+			children = (
+				6BC1CFC51CA908ED0007EAA2 /* DCRouterStyleHandle.h */,
+				6BC1CFC61CA908ED0007EAA2 /* DCRouterStyleHandle.m */,
+			);
+			name = resolve;
+			sourceTree = "<group>";
+		};
+		6BC1CFCE1CA9258F0007EAA2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6BC1CFCF1CA9258F0007EAA2 /* DCRouterModel.h */,
+				6BC1CFD01CA9258F0007EAA2 /* DCRouterModel.m */,
+			);
+			name = model;
+			path = router/model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +262,11 @@
 			files = (
 				6B511C091C7BF50F006314D3 /* DCRouteEngine.m in Sources */,
 				6B511BE51C7BF30C006314D3 /* ViewController.m in Sources */,
-				6B511C061C7BF440006314D3 /* DCWebRouteHelper.m in Sources */,
+				6B511C061C7BF440006314D3 /* DCRouteHelper.m in Sources */,
 				6B511BE21C7BF30C006314D3 /* AppDelegate.m in Sources */,
+				6BC1CFD11CA9258F0007EAA2 /* DCRouterModel.m in Sources */,
 				6B511BDF1C7BF30C006314D3 /* main.m in Sources */,
+				6BC1CFC71CA908ED0007EAA2 /* DCRouterStyleHandle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +453,7 @@
 				6B511BFE1C7BF30C006314D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B511BFF1C7BF30C006314D3 /* Build configuration list for PBXNativeTarget "DCRouterTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +462,7 @@
 				6B511C011C7BF30C006314D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

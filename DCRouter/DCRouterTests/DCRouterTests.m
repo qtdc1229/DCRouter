@@ -28,15 +28,15 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
-    [self testCase:ROUTE_PATH_STYLE];
+    [self testCase:ROUTE_URL_PATH_STYLE];
     [self testCase:@"sheme://method/[key]vaule"];
     
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
 - (void)testCase:(NSString *)aCase {
-    if ([[DCRouteEngine class] performSelector:@selector(verifyPathStyleWithString:)  withObject:aCase]) {
-        NSLog(@"DCRouteEngine : Great ! %@ isverified",aCase);
+    if ([DCRouteEngine dc_routeURLString:aCase]) {
+        NSLog(@"DCRouteEngine : Great ! %@ is routed",aCase);
     }else {
         NSLog(@"error %@",aCase);
     }

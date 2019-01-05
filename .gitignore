@@ -1,2 +1,8 @@
 
 DCRouter/Build/
+
+DCRouter/.DS_Store
+
+DCRouter/DCRouter.xcodeproj/project.xcworkspace/xcuserdata/dingchao.xcuserdatad/UserInterfaceState.xcuserstate
+
+*.xcuserstate
